@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassageForm"
+    android:background="@drawable/spase2"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Кому желаете отправить пожелание?"
+        android:textColor="@color/white">
+    </TextView>
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Получатель:"
+        android:textSize="20dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_baseline_mail_24"
+        android:drawablePadding="8dp"
+        android:paddingStart="10dp"/>
+    <EditText
+        android:id="@+id/email_theme"
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="Тема:"
+        android:textSize="20dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textEmailSubject"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:drawablePadding="8dp"
+        android:paddingStart="10dp"/>
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:hint="Сообщение:"
+        android:textSize="20dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textImeMultiLine"
+        android:drawableStart="@drawable/ic_baseline_add_comment_24"
+        android:drawablePadding="8dp"
+        android:paddingStart="10dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="25dp"
+        android:text="Отправить письмо"
+        android:textSize="18dp"
+        android:backgroundTint="#6DC8C2AA"
+        android:layout_marginTop="80dp">
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>
